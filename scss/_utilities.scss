@@ -1,0 +1,134 @@
+@import 'config';
+
+.bg {
+    &-primary {
+        background-color: $primary-color;
+    }
+    &-accent {
+        background-color: $accent-color;
+    }
+    &-light {
+        background-color: $light-color;
+    }
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.lead {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.bottom-line {
+    height: 5px;
+    width: 4rem;
+    background-color: $primary-color;
+    margin: 0 auto 2rem auto;
+}
+
+// Buttons style
+%btn-shared {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    border-radius: 20px;
+    margin-right: 0 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: trasnform 0.5s;
+    color: #fff;
+}
+
+%btn-shared:active {
+    transform: scale(0.999);
+    box-shadow: none;
+}
+
+.btn {
+
+    &-primary {
+        @extend %btn-shared;
+        background-color: $primary-color;
+    }
+
+    &-secondary {
+        @extend %btn-shared;
+        background-color: $secondary-color;
+    }
+
+    &-dark {
+        @extend %btn-shared;
+        background-color: $dark-color;
+    }
+
+    &-light {
+        @extend %btn-shared;
+        background-color: $light-color;
+    }
+}
+
+// a[class^='btn-']:hover,
+// button[class^='btn-']:hover,
+// input[class^='btn-']:hover {
+//     box-shadow: none;
+// }
+
+.section-title {
+    text-align: center;
+    margin: 3rem;
+
+    h2 {
+        font-size: 45px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+// .section-grid {
+//     display: grid;
+//     grid-template-columns:repeat(3, 1fr);
+//     grid-gap: 2.5rem;
+// }
+
+.card {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px  4px 0 gray;
+    transition: transform 0.2s;
+
+    &-content {
+        padding: 2rem;
+        color: #fff;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+    
+    img {
+        width: 250px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    &:hover {
+        transform: scale(1.009);
+    }
+
+}
+

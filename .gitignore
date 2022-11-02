@@ -1,0 +1,8 @@
+log.txt
+
+/dist/img
+/node_modules
+/favicon.ico
+/package-lock.json
+/package.json
+/.vscode

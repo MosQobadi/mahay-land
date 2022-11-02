@@ -1,0 +1,64 @@
+@media(max-width: 800px){
+    #main {
+        &-nav {
+            height: 70px;
+        }
+
+        .logo {
+            display: none;
+        }
+        
+    }
+
+    #home {
+        &-b {
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .app-content {
+                    padding-top: 30px;
+                    text-align: center;
+                }
+
+                img {
+                    display: none;
+                }
+            }
+
+        }
+
+        &-c {
+            .container {
+                display: flex;
+                flex-direction: column;
+                margin: 20px 30px;
+            }
+        }
+
+        &-d {
+            .reviews {
+                display: flex;
+                flex-direction: column;
+
+                .review {
+                    width: 500px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .container {
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+        }
+
+        .footer-logo {
+            display: none;
+        }
+    }
+}
